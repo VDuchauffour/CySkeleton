@@ -1,0 +1,31 @@
+{
+	"sig-overrides" : [
+		{
+			"pathPattern" : "CvPythonExtensions\\.CyGlobalContext\\.get([^ ]+)Info",
+			"signature" : "Cv{0}Info (int e{0})"
+		},
+		{
+			"pathPattern" : "CvPythonExtensions\\.CyGlobalContext\\.getNum([^ ]+)Infos",
+			"signature" : "int ()"
+		},
+		{
+			"path" : "CvPythonExtensions.CyGlobalContext.getPlayer",
+			"signature" : "CyPlayer (int ePlayer)"
+		},
+		{
+			"path" : "CvPythonExtensions.CyGlobalContext.getTeam",
+			"signature" : "CyTeam (int eTeam)"
+		},
+		{
+			"path" : "CvPythonExtensions.CyGlobalContext.getMap",
+			"signature" : "CyMap ()"
+		}
+	],
+	"type-overrides" : [
+		{
+			"pattern": "[a-zA-Z]+Types",
+			"type" : "int",
+			"must-be-known" : true
+		}
+	]
+}
