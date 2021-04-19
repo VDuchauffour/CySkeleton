@@ -23,8 +23,11 @@ Simply start the mod (you don't need to start a new game, and can close the game
 Alternatively, you can use the `tools/retrieve_extract.py` script as follows.
 
 ```
+# Windows
+py tools\retrieve_extract.py
+
 # Linux
 ./tools/retrieve_extract.py
 ```
 
-This produces a file `skeleton.json` in the `tools` directory.
+This produces a file `skeleton.json`.

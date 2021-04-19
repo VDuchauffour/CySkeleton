@@ -11,6 +11,9 @@ First, extract python data from BtS or your mod (see `../extract/README.md`). Al
 The skeleton produced by *CySkeleton-extract* is very simple, containing only basic types and docstrings for each function or member. However, the docstrings in BtS are fairly uniform and can thus be used to extract function signatures. This is what script `cyskeleton.preprocess` does (among other things). Depending on your operating system, type one of the following in your terminal console window, after switching to this directory (`generate`):
 
 ```
+# Windows
+.\preprocess.bat --config config_default.json -v3 skeleton_bts.json skeleton_bts_proc.json
+
 # Linux
 ./preprocess.sh --config config_default.json -v3 skeleton_bts.json skeleton_bts_proc.json
 ```
@@ -26,6 +29,9 @@ The last two arguments are the input and output files. If you have previously ru
 To generate the `CvPythonExtensions.py` file, simply run, e.g.,
 
 ```
+# Windows
+.\generate.bat skeleton_bts_proc.json out/bts/CyPythonExtensions.py
+
 # Linux
 ./generate.sh skeleton_bts_proc.json out/bts/CyPythonExtensions.py
 ```
