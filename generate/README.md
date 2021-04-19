@@ -30,10 +30,10 @@ To generate the `CvPythonExtensions.py` file, simply run, e.g.,
 
 ```
 # Windows
-.\generate.bat skeleton_bts_proc.json out/bts/CyPythonExtensions.py
+.\generate.bat skeleton_bts_proc.json out/bts/CvPythonExtensions.py
 
 # Linux
-./generate.sh skeleton_bts_proc.json out/bts/CyPythonExtensions.py
+./generate.sh skeleton_bts_proc.json out/bts/CvPythonExtensions.py
 ```
 
 This produces a file `CyPythonExtensions.py` in the `out/bts` directory, which you can then add to your IDE (In PyCharm, for example, you can add `out/bts` as a project root and then designate it as a source folder.
